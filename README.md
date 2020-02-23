@@ -14,5 +14,5 @@ The coverage distribution for the sample SC284808 is as shown in figure below.
 
 
 The cellular prevalence plot for the sample SC284808 is as shown in the figure below.
-The x-axis represents 101 intervals that a VAF value may fall into (0 - 0.01, 0.01 - 0.02, ..., 0.99 - 1, > 1), and the y-axis is the counts for each interval.
+The x-axis represents 101 intervals that a VAF value may fall into (0 <= cp <= 0.01, 0.01 < cp <= 0.02, ..., 0.99 < cp <= 1, cp > 1), and the y-axis is the counts for each interval.
 ![alt text](plots/VAF_count.png?raw=true "Title")
