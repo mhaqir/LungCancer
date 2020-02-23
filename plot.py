@@ -37,17 +37,26 @@ elif sys.argv[2] == 'VAF':
 
 	b = list(range(101)) + [1000]
 	b = [item/100 for item in b]
-	frq, edges = np.histogram(VAF, bins = b)
-	edges = list(edges[0:-1])
-	edges.append(1.01)
 
+	frq = np.zeros((101))
+	for i in range(len(VAF)):
+		for j in range(len(b)-1):
+			if VAF[i] > b[j] and VAF[i] <= b[j + 1]:
+				frq[j] += 1
+			if VAF[i] == 0:
+				frq[0] += 1
+
+
+	# frq, edges = np.histogram(VAF, bins = b)
+	edges = list(b[0:-1])
+	edges.append(1.01)
 
 
 	sns.set()
 	fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (15, 15))
 	sns.distplot(VAF, ax = ax, bins = edges)
 	plt.xlim(0, 1.02)
-	fig.savefig( '{}.png'.format('VAF_dist')) 
+	fig.savefig( 'plots/{}.png'.format('VAF_dist')) 
 	plt.close(fig)
 
 
@@ -60,5 +69,12 @@ elif sys.argv[2] == 'VAF':
 
 	fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (15, 15))
 	ax.bar(edges[:-1], frq, width=np.diff(edges), ec="k", align="edge")
-	fig.savefig( '{}.png'.format('VAF_count'))   
+	fig.savefig( 'plots/{}.png'.format('VAF_count'))   
 	plt.close(fig)
+
+else:
+	x = [1, 2, 3, 5, 3, 6]
+	frq, edges = np.histogram(x, bins = [1,2,3,5])
+
+
+	
