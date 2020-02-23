@@ -11,3 +11,8 @@ The output will be a file with name tumor_id.frq with the format specified in ht
 
 The coverage distribution for the sample SC284808 is as shown in figure below.
 ![alt text](plots/combined_SC284808_cov.png?raw=true "Title")
+
+
+The cellular prevalence plot for the sample SC284808 is as shown in the figure below.
+The x-axis represents 101 intervals that a VAF value may fall into (0 - 0.01, 0.01 - 0.02, ..., 0.99 - 1, > 1), and the y-axis is the counts for each interval.
+![alt text](plots/VAF_count.png?raw=true "Title")
