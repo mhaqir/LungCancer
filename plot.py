@@ -3,6 +3,9 @@ import seaborn as sns
 import numpy as np
 import sys
 import matplotlib.pyplot as plt
+import pydotplus
+# from graphviz import Source
+import pydot
 
 
 if sys.argv[2] == 'Coverage':
@@ -71,6 +74,26 @@ elif sys.argv[2] == 'VAF':
 	ax.bar(edges[:-1], frq, width=np.diff(edges), ec="k", align="edge")
 	fig.savefig( 'plots/{}.png'.format('VAF_count'))   
 	plt.close(fig)
+
+elif sys.argv[2] == 'Tree':
+	with open(sys.argv[1], 'r') as f:
+		lines = f.readlines()
+	lines = [line.rstrip().split(' ') for line in lines]
+	tree_data = np.asarray(lines).astype(float)
+
+	filename = sys.argv[1][sys.argv[1].index('/') + 1:]
+	first_occ = filename.index('_')
+	graph_name = filename[0:first_occ + 1]  + filename[first_occ + 1: first_occ + filename[first_occ + 1:].index('_') + 1]
+
+	with open(graph_name + '.dot','w') as out:
+	    for line in ('digraph G {','size="16,16";','splines=true;'):
+	        out.write('{}\n'.format(line))  
+	    for i in range(np.shape(tree_data)[0]):
+	        out.write('{} -> {} [ label="{}" ];\n'.format(tree_data[i, 7], tree_data[i, 8], tree_data[i, 9]))
+	    out.write('}\n')
+
+	(graph, )= pydot.graph_from_dot_file(graph_name + '.dot')
+	graph.write_png(sys.argv[3] + '/' + graph_name + '_tree.png')
 
 else:
 	x = [1, 2, 3, 5, 3, 6]
