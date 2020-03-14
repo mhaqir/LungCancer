@@ -37,7 +37,6 @@ elif sys.argv[2] == 'VAF':
 
 	VAF = (2 * ALT) / counts
 
-
 	b = list(range(101)) + [1000]
 	b = [item/100 for item in b]
 
