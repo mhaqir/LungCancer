@@ -81,6 +81,7 @@ def records(VCF):
 # VCF = sys.argv[1] + '/combined_SC284874+combined_SC284875.FINAL.vcf' 
 # VCF = VCFDIR[0]
 
+# Creating dict from GTF file and extracting gene names
 GTF_dict = readGTF(GTFDIR)
 CONETT_input = []
 
@@ -125,21 +126,23 @@ for VCF in SELECTED_VCFs:
 
 		# CONETT_records = CONETT_records[CONETT_records[:, 0:2] == CTP_output[:, 0:2]]
 
-
 		# Appending clusters from CTPsingle
 		assert np.shape(CONETT_records)[0] == np.shape(CTP_Clusters)[0]
 		CONETT_records = np.concatenate((CONETT_records, CTP_Clusters), axis = 1)
 
-
-		# Creating dict from GTF file and extracting gene names
-		
 		genes = []
+		idx = []
 		# st = time()
+		# Extracting gene ids and apply cancer-genes filter
 		for i in range(np.shape(CONETT_records)[0]):
-			genes.append(gene(CONETT_records[i,0], int(CONETT_records[i,1]), GTF_dict))
+			gene_id = gene(CONETT_records[i,0], int(CONETT_records[i,1]), GTF_dict)
+			if (gene_id != '') and (gene_id in Cancer_census_genes):
+				genes.append(gene_id)
+				idx.append(i)
 		# print(time() - st)
-		genes = np.expand_dims(np.asarray(genes), axis = 1)
 
+		genes = np.expand_dims(np.asarray(genes), axis = 1)
+		CONETT_records = CONETT_records[idx, :]
 
 		assert np.shape(CONETT_records)[0] == np.shape(genes)[0]
 		CONETT_records = np.concatenate((CONETT_records, genes), axis = 1)
@@ -176,9 +179,9 @@ for VCF in SELECTED_VCFs:
 			group1 = CONETT_selected_records[CONETT_selected_records[:, 4] == pair[0]]
 			group2 = CONETT_selected_records[CONETT_selected_records[:, 4] == pair[1]]
 			CONETT_input = CONETT_input + [[PATIENTID, group1[i, 5], group1[i, 3], group2[j, 5], group2[j, 3]] \
-			                 for i in range(np.shape(group1)[0]) for j in range(np.shape(group2)[0]) \
-			                 if (group1[i, 5] != '') and (group2[j, 5] != '') and \
-			                 (group1[i, 5] in Cancer_census_genes) and (group2[j, 5] in Cancer_census_genes) ]
+			                 for i in range(np.shape(group1)[0]) for j in range(np.shape(group2)[0])]# \
+			                 # if (group1[i, 5] != '') and (group2[j, 5] != '') and \
+			                 # (group1[i, 5] in Cancer_census_genes) and (group2[j, 5] in Cancer_census_genes) ]
 		# sleep(5)
 
 # print(len(CONETT_input))
