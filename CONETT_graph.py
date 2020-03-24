@@ -7,7 +7,7 @@ from glob import glob
 import numpy as np
 # import os
 
-GRAPH_DIR = '/data/haghirebrahimm2/CTPsingle_AA_Lung/CONETT_old.txt'
+GRAPH_DIR = '/data/haghirebrahimm2/CTPsingle_AA_Lung/CONETT.txt'
 CTP_DIR = '/data/haghirebrahimm2/CTPsingle_AA_Lung'
 
 # clinical = pd.read_excel('Clinical.xlsx', 'Clinical Data')
@@ -36,12 +36,14 @@ diff_p = [p for p in Samples_after_CTP if p not in patients]
 # print(diff_genes)
 
 # CONETT inout graph
-# edges = [(item[1], item[3]) for item in lines]
-# G = nx.Graph()
-# G.add_edges_from(edges)
-# plt.figure(figsize=(25,25))
-# nx.draw(G,node_size=60,font_size=8)
-# plt.savefig('CONETT_graph.png')
+
+edges = [(item[1], item[3]) for item in lines if item[0] == 'combined_SC284909']
+G = nx.DiGraph()
+G.add_edges_from(edges)
+pos = nx.random_layout(G)
+plt.figure(figsize=(15,15))
+nx.draw(G, pos, with_labels=True,node_size=1000,font_size=24) #
+plt.savefig('SC284909_graph.png')
 
 
 
@@ -51,19 +53,19 @@ diff_p = [p for p in Samples_after_CTP if p not in patients]
 # print(list(set(graph_dict['ARID2'])))
 
 
-for patient in patients:
-	sub_graph = CONETT_graph[CONETT_graph[:,0] == patient]
-	graph_dict = {}
-	for item in list(sub_graph):
-		if item[1] not in graph_dict.keys():
-			graph_dict[item[1]] = [item[3]]
-		else:
-			graph_dict[item[1]] = graph_dict[item[1]] + [item[3]]
-	for i in range(np.shape(sub_graph)[0]):
-		if sub_graph[i, 3] in list(sub_graph[:,1]):
-			if (sub_graph[i, 3] not in graph_dict[sub_graph[i, 1]]) and \
-			(sub_graph[i, 1] not in graph_dict[sub_graph[i, 3]]):
-				print(sub_graph[i,:])
+# for patient in patients:
+# 	sub_graph = CONETT_graph[CONETT_graph[:,0] == patient]
+# 	graph_dict = {}
+# 	for item in list(sub_graph):
+# 		if item[1] not in graph_dict.keys():
+# 			graph_dict[item[1]] = [item[3]]
+# 		else:
+# 			graph_dict[item[1]] = graph_dict[item[1]] + [item[3]]
+# 	for i in range(np.shape(sub_graph)[0]):
+# 		if sub_graph[i, 3] in list(sub_graph[:,1]):
+# 			if (sub_graph[i, 3] not in graph_dict[sub_graph[i, 1]]) and \
+# 			(sub_graph[i, 1] not in graph_dict[sub_graph[i, 3]]):
+# 				print(sub_graph[i,:])
 
 
 				# if sub_graph[i, 0] not in non_transitive:
