@@ -22,11 +22,10 @@ lines = [line.rstrip().split(' ') for line in lines[1:]]
 CONETT_graph = np.asarray(lines)
 
 
-# samples absent from CONETT graph because CTPsingle assigns all of their mutations to one cluster
+# Some samples absent from CONETT graph because CTPsingle assigns all of their mutations to one cluster
 patients = list(set([item[0] for item in lines]))
 diff_p = [p for p in Samples_after_CTP if p not in patients]
-# print(diff_p)
-# print(len(diff_p))
+
 
 
 # genes1 = list(set([item[1] for item in lines]))
@@ -35,40 +34,41 @@ diff_p = [p for p in Samples_after_CTP if p not in patients]
 # print(len(diff_genes))
 # print(diff_genes)
 
-# CONETT inout graph
 
-edges = [(item[1], item[3]) for item in lines if item[0] == 'combined_SC284909']
-G = nx.DiGraph()
-G.add_edges_from(edges)
-pos = nx.random_layout(G)
-plt.figure(figsize=(15,15))
-nx.draw(G, pos, with_labels=True,node_size=1000,font_size=24) #
-plt.savefig('SC284909_graph.png')
+# var_types1 = set(list(CONETT_graph[:, 2]))
+# print(var_types1)
+# var_types2 = set(list(CONETT_graph[:, 4]))
+# print(var_types2)
 
 
+# Checking for transitivity
+for patient in patients:
+	print('{}-----------------------------------------------------'.format(patient))
+	sub_graph = CONETT_graph[CONETT_graph[:,0] == patient]
+	graph_dict = {}
+	for item in list(sub_graph):
+		if (item[1], item[2], item[3]) not in graph_dict.keys():
+			graph_dict[(item[1], item[2], item[3])] = [(item[3], item[4], item[5])]
+		else:
+			graph_dict[(item[1], item[2], item[3])] = graph_dict[(item[1], item[2], item[3])] + [(item[3], item[4], item[5])]
+
+	first_second = list(zip(list(sub_graph[:,1]), list(sub_graph[:,2]), list(sub_graph[:,3])))
+	for i in range(np.shape(sub_graph)[0]):
+		if (sub_graph[i, 3], sub_graph[i, 4], sub_graph[i, 5]) in first_second:
+			indices = [k for k, x in enumerate(first_second) if x == (sub_graph[i, 3], sub_graph[i, 4], sub_graph[i, 5])]
+
+			for idx in indices:			
+				if (sub_graph[idx, 3], sub_graph[idx, 4], sub_graph[idx, 5]) not in graph_dict[(sub_graph[i, 1], sub_graph[i, 2], sub_graph[i, 3])]:
+					print(sub_graph[i,:])
+					print(sub_graph[idx,:])
+					print('------------------------')
 
 
-# print(len(graph_dict))
-# print(len(lines))
-# print(list(set(graph_dict['ARID2'])))
-
-
-# for patient in patients:
-# 	sub_graph = CONETT_graph[CONETT_graph[:,0] == patient]
-# 	graph_dict = {}
-# 	for item in list(sub_graph):
-# 		if item[1] not in graph_dict.keys():
-# 			graph_dict[item[1]] = [item[3]]
-# 		else:
-# 			graph_dict[item[1]] = graph_dict[item[1]] + [item[3]]
-# 	for i in range(np.shape(sub_graph)[0]):
-# 		if sub_graph[i, 3] in list(sub_graph[:,1]):
-# 			if (sub_graph[i, 3] not in graph_dict[sub_graph[i, 1]]) and \
-# 			(sub_graph[i, 1] not in graph_dict[sub_graph[i, 3]]):
-# 				print(sub_graph[i,:])
-
-
-				# if sub_graph[i, 0] not in non_transitive:
-				# 	non_transitive.append(sub_graph[i, 0])
-
-
+# CONETT input graph
+# edges = [(item[1], item[3]) for item in lines if item[0] == 'combined_SC284909']
+# G = nx.DiGraph()
+# G.add_edges_from(edges)
+# pos = nx.random_layout(G)
+# plt.figure(figsize=(15,15))
+# nx.draw(G, pos, with_labels=True,node_size=1000,font_size=24) #
+# plt.savefig('SC284909_graph.png')

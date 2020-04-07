@@ -152,7 +152,7 @@ for VCF in SELECTED_VCFs:
 		# print(Cluster_labels)
 
 		# Clusters mean VAF
-		Clutser_VAFS = [np.mean(CONETT_records[CONETT_records[:, 4] == l][:, 2].astype(float)) for l in Cluster_labels]
+		# Clutser_VAFS = [np.mean(CONETT_records[CONETT_records[:, 4] == l][:, 2].astype(float)) for l in Cluster_labels]
 
 		# In case there are more than one mutation on a gene, we get the one with highest VAF 
 		CONETT_selected_records = []
@@ -168,25 +168,36 @@ for VCF in SELECTED_VCFs:
 		# print(len(CONETT_selected_records))
 		# print(CONETT_selected_records[0:10])
 
+
 		CONETT_selected_records = np.asarray(CONETT_selected_records)
+		# print(CONETT_selected_records)
 		# print(np.shape(CONETT_selected_records))
+		Cluster_labels_selected = list(set(list(CONETT_selected_records[:,4])))
+		Cluster_VAFS = [np.mean(CONETT_selected_records[CONETT_selected_records[:, 4] == l][:, 2].astype(float)) for l in Cluster_labels_selected]
 
-		Cluster_pairs = [(c1, c2) for c1 in Cluster_labels for c2 in Cluster_labels \
-		 if Clutser_VAFS[Cluster_labels.index(c1)] > Clutser_VAFS[Cluster_labels.index(c2)]]
+		# print('Cluster_labels_selected', Cluster_labels_selected)
+		# print('Cluster_VAFS', Cluster_VAFS)
 
+		Cluster_pairs = [(c1, c2) for c1 in Cluster_labels_selected for c2 in Cluster_labels_selected \
+		 if Cluster_VAFS[Cluster_labels_selected.index(c1)] > Cluster_VAFS[Cluster_labels_selected.index(c2)]]
+
+		# print('Clutser_VAFS', Cluster_pairs)
 		
 		for pair in Cluster_pairs:
 			group1 = CONETT_selected_records[CONETT_selected_records[:, 4] == pair[0]]
+			# print('group1 {}'.format(pair), np.shape(group1))
 			group2 = CONETT_selected_records[CONETT_selected_records[:, 4] == pair[1]]
-			CONETT_input = CONETT_input + [[PATIENTID, group1[i, 5], group1[i, 3], group2[j, 5], group2[j, 3]] \
+			# print('group2 {}'.format(pair), np.shape(group2))
+			CONETT_input = CONETT_input + [[PATIENTID, group1[i, 5], group1[i, 3], group1[i, 4], group2[j, 5], group2[j, 3], group2[j, 4]] \
 			                 for i in range(np.shape(group1)[0]) for j in range(np.shape(group2)[0])]# \
 			                 # if (group1[i, 5] != '') and (group2[j, 5] != '') and \
 			                 # (group1[i, 5] in Cancer_census_genes) and (group2[j, 5] in Cancer_census_genes) ]
+			# print('CONETT_input', len(CONETT_input))
 		# sleep(5)
 
 # print(len(CONETT_input))
 # print(CONETT_input[0:10])
-CONETT_col_names = ['patient_id', 'gene_name_src', 'alteration_type_src', 'gene_name_dest', 'alteration_type_dest']
+CONETT_col_names = ['patient_id', 'gene_name_src', 'alteration_type_src', 'src_clus','gene_name_dest', 'alteration_type_dest', 'des_clus']
 with open(OUTPUTDIR + '/' + 'CONETT.txt', 'w') as f:
 	f.writelines(' '.join(CONETT_col_names) + '\n')
 	for i in range(len(CONETT_input) - 1):
