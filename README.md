@@ -17,5 +17,5 @@ The cellular prevalence plot for the sample SC284808 is as shown in the figure b
 The x-axis represents 101 intervals that a VAF value may fall into (0 <= cp <= 0.01, 0.01 < cp <= 0.02, ..., 0.99 < cp <= 1, cp > 1), and the y-axis is the counts for each interval.
 ![alt text](plots/VAF_count.png?raw=true "Title")
 
-CONETT input graph for the sample SC284909 is as follows:
-![alt text](plots/SC284909_graph.png?raw=true "Title")
+<!-- CONETT input graph for the sample SC284909 is as follows:
+![alt text](plots/SC284909_graph.png?raw=true "Title") -->

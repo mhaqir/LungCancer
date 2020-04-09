@@ -114,6 +114,19 @@ elif sys.argv[2] == 'CONETT':
 	graph.write_png(graph_name + '_tree.png')
 
 
+elif sys.argv[2] == 'fr_removed':
+	with open(sys.argv[1], 'r') as f:
+		lines = f.readlines()
+	fr_removed = [float(line.rstrip().split(' ')[0]) for line in lines]
+
+	# print(fr_removed)
+	edges = list(range(1, len(fr_removed) + 1))
+	fig, ax = plt.subplots(nrows = 1, ncols = 1, figsize = (15, 15))
+	ax.bar(edges, fr_removed, width=1, ec="k", align="edge")
+	plt.xlabel('Patients', fontsize = 14)
+	plt.ylabel('Fraction of alterations removed', fontsize = 14)
+	fig.savefig( 'plots/{}.png'.format('fr_removed'))   
+	plt.close(fig)
 
 else:
 	x = [1, 2, 3, 5, 3, 6]

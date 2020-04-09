@@ -42,26 +42,50 @@ diff_p = [p for p in Samples_after_CTP if p not in patients]
 
 
 # Checking for transitivity
+# for patient in patients:
+# 	print('{}-----------------------------------------------------'.format(patient))
+# 	sub_graph = CONETT_graph[CONETT_graph[:,0] == patient]
+# 	graph_dict = {}
+# 	for item in list(sub_graph):
+# 		if (item[1], item[2], item[3]) not in graph_dict.keys():
+# 			graph_dict[(item[1], item[2], item[3])] = [(item[4], item[5], item[6])]
+# 		else:
+# 			graph_dict[(item[1], item[2], item[3])] = graph_dict[(item[1], item[2], item[3])] + [(item[4], item[5], item[6])]
+
+# 	first_second = list(zip(list(sub_graph[:,1]), list(sub_graph[:,2]), list(sub_graph[:,3])))
+# 	for i in range(np.shape(sub_graph)[0]):
+# 		if (sub_graph[i, 4], sub_graph[i, 5], sub_graph[i, 6]) in first_second:
+# 			indices = [k for k, x in enumerate(first_second) if x == (sub_graph[i, 4], sub_graph[i, 5], sub_graph[i, 6])]
+
+# 			for idx in indices:			
+# 				if (sub_graph[idx, 4], sub_graph[idx, 5], sub_graph[idx, 6]) not in graph_dict[(sub_graph[i, 1], sub_graph[i, 2], sub_graph[i, 3])]:
+# 					print(sub_graph[i,:])
+# 					print(sub_graph[idx,:])
+# 					print('------------------------')
+
+
 for patient in patients:
 	print('{}-----------------------------------------------------'.format(patient))
 	sub_graph = CONETT_graph[CONETT_graph[:,0] == patient]
 	graph_dict = {}
 	for item in list(sub_graph):
-		if (item[1], item[2], item[3]) not in graph_dict.keys():
-			graph_dict[(item[1], item[2], item[3])] = [(item[3], item[4], item[5])]
+		if (item[1], item[2]) not in graph_dict.keys():
+			graph_dict[(item[1], item[2])] = [(item[3], item[4])]
 		else:
-			graph_dict[(item[1], item[2], item[3])] = graph_dict[(item[1], item[2], item[3])] + [(item[3], item[4], item[5])]
+			graph_dict[(item[1], item[2])] = graph_dict[(item[1], item[2])] + [(item[3], item[4])]
 
-	first_second = list(zip(list(sub_graph[:,1]), list(sub_graph[:,2]), list(sub_graph[:,3])))
+	first_second = list(zip(list(sub_graph[:,1]), list(sub_graph[:,2])))
 	for i in range(np.shape(sub_graph)[0]):
-		if (sub_graph[i, 3], sub_graph[i, 4], sub_graph[i, 5]) in first_second:
-			indices = [k for k, x in enumerate(first_second) if x == (sub_graph[i, 3], sub_graph[i, 4], sub_graph[i, 5])]
+		if (sub_graph[i, 3], sub_graph[i, 4]) in first_second:
+			indices = [k for k, x in enumerate(first_second) if x == (sub_graph[i, 3], sub_graph[i, 4])]
 
 			for idx in indices:			
-				if (sub_graph[idx, 3], sub_graph[idx, 4], sub_graph[idx, 5]) not in graph_dict[(sub_graph[i, 1], sub_graph[i, 2], sub_graph[i, 3])]:
+				if (sub_graph[idx, 3], sub_graph[idx, 4]) not in graph_dict[(sub_graph[i, 1], sub_graph[i, 2])]:
 					print(sub_graph[i,:])
 					print(sub_graph[idx,:])
 					print('------------------------')
+
+
 
 
 # CONETT input graph
