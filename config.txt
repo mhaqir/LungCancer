@@ -1,0 +1,95 @@
+working_dir: /data/haghirebrahimm2/Pyclone_AA_Lung
+trace_dir: /data/haghirebrahimm2/Pyclone_AA_Lung/Pylone_output
+density: 10000
+base_measure_params:
+	alpha: 1
+	beta: 1
+concentration:
+	value: 1.0
+prior:
+	shape: 1.0
+	rate: 0.001
+samples:
+	AfAm:
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284906.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284963.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284967.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284900.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284918.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284913.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284925.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284934.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284961.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284971.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284881.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284936.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284875.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284867.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284904.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284849.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284973.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284938.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284947.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284969.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284895.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284853.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284840.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284862.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284950.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284873.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284842.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284891.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284871.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284943.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284817.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284839.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284899.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284959.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284911.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284887.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284869.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284814.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284885.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284835.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284915.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284897.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284846.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284821.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284828.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284810.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284855.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284945.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284812.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284948.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284824.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284920.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284865.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284808.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284830.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284957.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284893.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284927.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284922.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284826.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284851.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284837.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284844.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284931.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284965.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284823.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284889.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284909.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284929.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284803.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284819.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284902.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284807.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284858.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284860.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284877.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284883.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284941.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284916.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284952.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284856.tsv
+		mutations_file: /data/haghirebrahimm2/Pyclone_AA_Lung/combined_SC284954.tsv
