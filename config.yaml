@@ -1,0 +1,118 @@
+num_iters: 10000
+
+base_measure_params:
+  alpha: 1
+  beta: 1
+
+concentration:
+  value: 1.0
+
+  prior:
+    shape: 1.0
+    rate: 0.001
+
+density: pyclone_beta_binomial
+
+beta_binomial_precision_params:
+  value: 1000
+
+  prior:
+    shape: 1.0
+    rate: 0.0001
+
+  proposal:
+    precision: 0.01
+
+working_dir: /data/haghirebrahimm2/Pyclone_AA_Lung
+
+trace_dir: Pyclone_output/trace
+
+samples:
+  AfAm:
+    mutations_file: combined_SC284875.yaml
+    mutations_file: combined_SC284906.yaml
+    mutations_file: combined_SC284945.yaml
+    mutations_file: combined_SC284844.yaml
+    mutations_file: combined_SC284947.yaml
+    mutations_file: combined_SC284952.yaml
+    mutations_file: combined_SC284920.yaml
+    mutations_file: combined_SC284883.yaml
+    mutations_file: combined_SC284899.yaml
+    mutations_file: combined_SC284819.yaml
+    mutations_file: combined_SC284846.yaml
+    mutations_file: combined_SC284936.yaml
+    mutations_file: combined_SC284954.yaml
+    mutations_file: combined_SC284830.yaml
+    mutations_file: combined_SC284915.yaml
+    mutations_file: combined_SC284808.yaml
+    mutations_file: combined_SC284948.yaml
+    mutations_file: combined_SC284814.yaml
+    mutations_file: combined_SC284812.yaml
+    mutations_file: combined_SC284938.yaml
+    mutations_file: combined_SC284835.yaml
+    mutations_file: combined_SC284869.yaml
+    mutations_file: combined_SC284950.yaml
+    mutations_file: combined_SC284849.yaml
+    mutations_file: combined_SC284927.yaml
+    mutations_file: combined_SC284810.yaml
+    mutations_file: combined_SC284873.yaml
+    mutations_file: combined_SC284916.yaml
+    mutations_file: combined_SC284889.yaml
+    mutations_file: combined_SC284865.yaml
+    mutations_file: combined_SC284828.yaml
+    mutations_file: combined_SC284851.yaml
+    mutations_file: combined_SC284957.yaml
+    mutations_file: combined_SC284887.yaml
+    mutations_file: combined_SC284871.yaml
+    mutations_file: combined_SC284840.yaml
+    mutations_file: combined_SC284963.yaml
+    mutations_file: combined_SC284971.yaml
+    mutations_file: combined_SC284943.yaml
+    mutations_file: combined_SC284867.yaml
+    mutations_file: combined_SC284925.yaml
+    mutations_file: combined_SC284856.yaml
+    mutations_file: combined_SC284913.yaml
+    mutations_file: combined_SC284893.yaml
+    mutations_file: combined_SC284967.yaml
+    mutations_file: combined_SC284837.yaml
+    mutations_file: combined_SC284824.yaml
+    mutations_file: combined_SC284904.yaml
+    mutations_file: combined_SC284969.yaml
+    mutations_file: combined_SC284961.yaml
+    mutations_file: combined_SC284839.yaml
+    mutations_file: combined_SC284918.yaml
+    mutations_file: combined_SC284959.yaml
+    mutations_file: combined_SC284929.yaml
+    mutations_file: combined_SC284877.yaml
+    mutations_file: combined_SC284823.yaml
+    mutations_file: combined_SC284817.yaml
+    mutations_file: combined_SC284895.yaml
+    mutations_file: combined_SC284900.yaml
+    mutations_file: combined_SC284862.yaml
+    mutations_file: combined_SC284934.yaml
+    mutations_file: combined_SC284803.yaml
+    mutations_file: combined_SC284911.yaml
+    mutations_file: combined_SC284881.yaml
+    mutations_file: combined_SC284891.yaml
+    mutations_file: combined_SC284855.yaml
+    mutations_file: combined_SC284842.yaml
+    mutations_file: combined_SC284973.yaml
+    mutations_file: combined_SC284858.yaml
+    mutations_file: combined_SC284897.yaml
+    mutations_file: combined_SC284909.yaml
+    mutations_file: combined_SC284902.yaml
+    mutations_file: combined_SC284941.yaml
+    mutations_file: combined_SC284931.yaml
+    mutations_file: combined_SC284965.yaml
+    mutations_file: combined_SC284860.yaml
+    mutations_file: combined_SC284853.yaml
+    mutations_file: combined_SC284821.yaml
+    mutations_file: combined_SC284922.yaml
+    mutations_file: combined_SC284885.yaml
+    mutations_file: combined_SC284826.yaml
+    mutations_file: combined_SC284807.yaml
+
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
