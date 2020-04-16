@@ -18,7 +18,7 @@ CONFIG_FILE = '/home/haghirebrahimm2/LungCancer/config.yaml'
 # 	subprocess.check_output(cmd1, stderr=subprocess.STDOUT, shell = True)
 
 
-## Set the prior flag
+## Set the prior flagk
 
 cmd2 = 'PyClone run_analysis --config_file {conf} --prior  {pri}'.format(conf = CONFIG_FILE, pri = 'total_copy_number')
 subprocess.check_output(cmd2, stderr=subprocess.STDOUT, shell = True)

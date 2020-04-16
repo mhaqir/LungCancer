@@ -28,88 +28,657 @@ working_dir: /data/haghirebrahimm2/Pyclone_AA_Lung
 trace_dir: Pyclone_output/trace
 
 samples:
-  AfAm:
+
+  AfAm_1:
+
     mutations_file: combined_SC284875.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_2:
+
     mutations_file: combined_SC284906.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_3:
+
     mutations_file: combined_SC284945.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_4:
+
     mutations_file: combined_SC284844.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_5:
+
     mutations_file: combined_SC284947.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_6:
+
     mutations_file: combined_SC284952.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_7:
+
     mutations_file: combined_SC284920.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_8:
+
     mutations_file: combined_SC284883.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_9:
+
     mutations_file: combined_SC284899.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_10:
+
     mutations_file: combined_SC284819.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_11:
+
     mutations_file: combined_SC284846.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_12:
+
     mutations_file: combined_SC284936.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_13:
+
     mutations_file: combined_SC284954.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_14:
+
     mutations_file: combined_SC284830.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_15:
+
     mutations_file: combined_SC284915.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_16:
+
     mutations_file: combined_SC284808.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_17:
+
     mutations_file: combined_SC284948.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_18:
+
     mutations_file: combined_SC284814.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_19:
+
     mutations_file: combined_SC284812.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_20:
+
     mutations_file: combined_SC284938.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_21:
+
     mutations_file: combined_SC284835.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_22:
+
     mutations_file: combined_SC284869.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_23:
+
     mutations_file: combined_SC284950.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_24:
+
     mutations_file: combined_SC284849.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_25:
+
     mutations_file: combined_SC284927.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_26:
+
     mutations_file: combined_SC284810.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_27:
+
     mutations_file: combined_SC284873.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_28:
+
     mutations_file: combined_SC284916.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_29:
+
     mutations_file: combined_SC284889.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_30:
+
     mutations_file: combined_SC284865.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_31:
+
     mutations_file: combined_SC284828.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_32:
+
     mutations_file: combined_SC284851.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_33:
+
     mutations_file: combined_SC284957.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_34:
+
     mutations_file: combined_SC284887.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_35:
+
     mutations_file: combined_SC284871.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_36:
+
     mutations_file: combined_SC284840.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_37:
+
     mutations_file: combined_SC284963.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_38:
+
     mutations_file: combined_SC284971.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_39:
+
     mutations_file: combined_SC284943.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_40:
+
     mutations_file: combined_SC284867.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_41:
+
     mutations_file: combined_SC284925.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_42:
+
     mutations_file: combined_SC284856.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_43:
+
     mutations_file: combined_SC284913.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_44:
+
     mutations_file: combined_SC284893.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_45:
+
     mutations_file: combined_SC284967.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_46:
+
     mutations_file: combined_SC284837.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_47:
+
     mutations_file: combined_SC284824.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_48:
+
     mutations_file: combined_SC284904.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_49:
+
     mutations_file: combined_SC284969.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_50:
+
     mutations_file: combined_SC284961.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_51:
+
     mutations_file: combined_SC284839.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_52:
+
     mutations_file: combined_SC284918.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_53:
+
     mutations_file: combined_SC284959.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_54:
+
     mutations_file: combined_SC284929.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_55:
+
     mutations_file: combined_SC284877.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_56:
+
     mutations_file: combined_SC284823.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_57:
+
     mutations_file: combined_SC284817.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_58:
+
     mutations_file: combined_SC284895.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_59:
+
     mutations_file: combined_SC284900.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_60:
+
     mutations_file: combined_SC284862.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_61:
+
     mutations_file: combined_SC284934.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_62:
+
     mutations_file: combined_SC284803.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_63:
+
     mutations_file: combined_SC284911.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_64:
+
     mutations_file: combined_SC284881.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_65:
+
     mutations_file: combined_SC284891.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_66:
+
     mutations_file: combined_SC284855.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_67:
+
     mutations_file: combined_SC284842.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_68:
+
     mutations_file: combined_SC284973.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_69:
+
     mutations_file: combined_SC284858.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_70:
+
     mutations_file: combined_SC284897.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_71:
+
     mutations_file: combined_SC284909.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_72:
+
     mutations_file: combined_SC284902.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_73:
+
     mutations_file: combined_SC284941.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_74:
+
     mutations_file: combined_SC284931.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_75:
+
     mutations_file: combined_SC284965.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_76:
+
     mutations_file: combined_SC284860.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_77:
+
     mutations_file: combined_SC284853.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_78:
+
     mutations_file: combined_SC284821.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_79:
+
     mutations_file: combined_SC284922.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_80:
+
     mutations_file: combined_SC284885.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_81:
+
     mutations_file: combined_SC284826.yaml
+    tumour_content:
+      value: 1.0
+
+    error_rate: 0.001
+
+  AfAm_82:
+
     mutations_file: combined_SC284807.yaml
 
     tumour_content:

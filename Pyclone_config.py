@@ -49,12 +49,17 @@ with open('config.yaml', 'w') as f:
 
 	f.writelines('trace_dir: {}\n\n'.format(TRACE_DIR))
 
-	f.writelines('samples:\n')
-	f.writelines('  {}:\n'.format(SAMPLE_ID))
-	for i in range(len(YAMLDIR) - 1):
+	f.writelines('samples:\n\n')
+	
+	for i in range(len(YAMLDIR) - 1):  
 		YAMLFILE = YAMLDIR[i][YAMLDIR[i].rfind('/') + 1:]
+		f.writelines('  {s}_{m}:\n\n'.format(s = SAMPLE_ID, m = str(i + 1)))
 		f.writelines('    mutations_file: {}\n'.format(YAMLFILE))
+		f.writelines('    tumour_content:\n')
+		f.writelines('      value: {}\n\n'.format(TUMOUR_CONTENT_VALUE))
+		f.writelines('    error_rate: {}\n\n'.format(ERROR_RATE))
 	YAMLFILE = YAMLDIR[len(YAMLDIR) - 1][YAMLDIR[len(YAMLDIR) - 1].rfind('/') + 1:]
+	f.writelines('  {s}_{m}:\n\n'.format(s = SAMPLE_ID, m = str(len(YAMLDIR))))
 	f.writelines('    mutations_file: {}\n\n'.format(YAMLFILE))
 	f.writelines('    tumour_content:\n')
 	f.writelines('      value: {}\n\n'.format(TUMOUR_CONTENT_VALUE))
