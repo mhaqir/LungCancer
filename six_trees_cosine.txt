@@ -1,0 +1,332 @@
+Tree for males based on Cosine distance:
+                              /-combined SC284950
+                    /--------|
+                   |         |          /-combined SC284906
+                   |          \--------|
+                   |                   |          /-combined SC284869
+          /--------|                    \--------|
+         |         |                              \-combined SC284853
+         |         |
+         |         |          /-combined SC284969
+         |          \--------|
+         |                    \-combined SC284957
+         |
+         |                                        /-combined SC284817
+         |                              /--------|
+         |                             |         |          /-combined SC284808
+         |                             |          \--------|
+         |                             |                    \-combined SC284871
+         |                             |
+         |                             |                    /-combined SC284877
+         |                             |          /--------|
+         |                             |         |         |          /-combined SC284911
+         |                    /--------|         |          \--------|
+         |                   |         |         |                   |          /-combined SC284971
+         |                   |         |         |                    \--------|
+         |                   |         |         |                              \-combined SC284867
+         |                   |         |         |
+         |                   |         |         |                              /-combined SC284954
+         |                   |         |         |                    /--------|
+         |                   |         |         |                   |         |          /-combined SC284856
+         |                   |          \--------|                   |          \--------|
+         |                   |                   |                   |                    \-combined SC284965
+         |                   |                   |          /--------|
+         |                   |                   |         |         |                    /-combined SC284900
+         |                   |                   |         |         |          /--------|
+         |                   |                   |         |         |         |         |          /-combined SC284851
+         |                   |                   |         |         |         |          \--------|
+         |                   |                   |         |          \--------|                    \-combined SC284909
+         |                   |                   |         |                   |
+         |                   |                   |         |                   |          /-combined SC284891
+         |                   |                   |         |                    \--------|
+         |                   |                    \--------|                              \-combined SC284885
+         |                   |                             |
+         |                   |                             |          /-combined SC284810
+         |                   |                             |         |
+         |                   |                             |         |                                        /-combined SC284824
+         |                   |                             |         |                              /--------|
+         |                   |                             |         |                             |         |          /-combined SC284947
+         |                   |                             |         |                             |          \--------|
+         |                   |                             |         |                    /--------|                    \-combined SC284807
+         |                   |                             |         |                   |         |
+         |                   |                              \--------|                   |         |          /-combined SC284945
+         |          /--------|                                       |          /--------|          \--------|
+         |         |         |                                       |         |         |                    \-combined SC284858
+         |         |         |                                       |         |         |
+         |         |         |                                       |         |         |          /-combined SC284835
+         |         |         |                                       |         |          \--------|
+         |         |         |                                       |         |                   |          /-combined SC284862
+         |         |         |                                       |         |                    \--------|
+         |         |         |                                       |         |                              \-combined SC284837
+         |         |         |                                        \--------|
+         |         |         |                                                 |                              /-combined SC284803
+---------|         |         |                                                 |                    /--------|
+         |         |         |                                                 |                   |          \-combined SC284902
+         |         |         |                                                 |          /--------|
+         |         |         |                                                 |         |         |          /-combined SC284913
+         |         |         |                                                 |         |          \--------|
+         |         |         |                                                 |         |                   |          /-combined SC284973
+         |         |         |                                                  \--------|                    \--------|
+         |         |         |                                                           |                              \-combined SC284915
+         |         |         |                                                           |
+         |         |         |                                                           |          /-combined SC284959
+         |         |         |                                                            \--------|
+         |         |         |                                                                     |          /-combined SC284934
+         |---------|         |                                                                      \--------|
+         |         |         |                                                                               |          /-combined SC284938
+         |         |         |                                                                                \--------|
+         |         |         |                                                                                          \-combined SC284925
+         |         |         |
+         |         |         |                    /-combined SC284840
+         |         |         |          /--------|
+         |         |         |         |         |          /-combined SC284904
+         |         |         |         |          \--------|
+         |         |          \--------|                    \-combined SC284873
+         |         |                   |
+         |         |                   |          /-combined SC284865
+         |         |                    \--------|
+         |         |                              \-combined SC284823
+         |         |
+         |         |                              /-combined SC284943
+         |         |                    /--------|
+         |         |                   |          \-combined SC284860
+         |         |          /--------|
+         |         |         |         |          /-combined SC284812
+         |         |         |          \--------|
+         |         |         |                    \-combined SC284920
+         |          \--------|
+         |                   |                    /-combined SC284927
+         |                   |          /--------|
+         |                   |         |          \-combined SC284830
+         |                   |         |
+         |                    \--------|                    /-combined SC284952
+         |                             |          /--------|
+         |                             |         |          \-combined SC284846
+         |                              \--------|
+         |                                       |          /-combined SC284887
+         |                                        \--------|
+         |                                                 |          /-combined SC284814
+         |                                                  \--------|
+         |                                                           |          /-combined SC284963
+         |                                                            \--------|
+         |                                                                     |          /-combined SC284819
+         |                                                                      \--------|
+         |                                                                                \-combined SC284855
+         |
+         |                    /-combined SC284828
+         |          /--------|
+         |         |          \-combined SC284916
+         |         |
+          \--------|                    /-combined SC284897
+                   |          /--------|
+                   |         |         |          /-combined SC284922
+                   |         |          \--------|
+                    \--------|                    \-combined SC284936
+                             |
+                             |          /-combined SC284967
+                              \--------|
+                                        \-combined SC284839
+
+
+
+Tree for females based on Cosine distance:
+                    /-combined SC284849
+          /--------|
+         |         |          /-combined SC284961
+         |          \--------|
+         |                   |          /-combined SC284883
+         |                    \--------|
+         |                             |          /-combined SC284842
+         |                              \--------|
+         |                                        \-combined SC284895
+         |
+         |                              /-combined SC284941
+         |                    /--------|
+         |                   |         |          /-combined SC284881
+         |                   |          \--------|
+         |          /--------|                    \-combined SC284948
+         |         |         |
+---------|         |         |          /-combined SC284889
+         |---------|          \--------|
+         |         |                    \-combined SC284918
+         |         |
+         |         |          /-combined SC284893
+         |          \--------|
+         |                   |          /-combined SC284931
+         |                    \--------|
+         |                             |          /-combined SC284821
+         |                              \--------|
+         |                                       |          /-combined SC284899
+         |                                        \--------|
+         |                                                  \-combined SC284929
+         |
+         |          /-combined SC284826
+          \--------|
+                   |          /-combined SC284844
+                    \--------|
+                              \-combined SC284875
+
+
+
+Tree for males (LUAD) based on Cosine distance:
+          /-combined SC284952
+         |
+         |          /-combined SC284927
+         |         |
+         |         |          /-combined SC284869
+         |         |         |
+         |         |         |          /-combined SC284887
+         |---------|         |         |
+         |         |         |         |                              /-combined SC284897
+         |         |         |         |                    /--------|
+         |         |         |         |                   |         |          /-combined SC284967
+         |         |         |         |                   |          \--------|
+         |          \--------|         |                   |                    \-combined SC284839
+         |                   |         |                   |
+         |                   |         |                   |                              /-combined SC284840
+         |                   |         |                   |                    /--------|
+         |                   |         |                   |                   |          \-combined SC284803
+         |                   |         |          /--------|                   |
+         |                   |         |         |         |          /--------|                    /-combined SC284862
+         |                   |         |         |         |         |         |          /--------|
+         |                    \--------|         |         |         |         |         |          \-combined SC284837
+         |                             |         |         |         |          \--------|
+         |                             |         |         |         |                   |          /-combined SC284945
+         |                             |         |         |         |                    \--------|
+         |                             |         |         |         |                             |          /-combined SC284913
+         |                             |         |         |         |                              \--------|
+         |                             |         |          \--------|                                       |          /-combined SC284973
+         |                             |         |                   |                                        \--------|
+---------|                             |         |                   |                                                  \-combined SC284915
+         |                             |         |                   |
+         |                             |         |                   |          /-combined SC284817
+         |                             |         |                   |         |
+         |                             |         |                   |         |                              /-combined SC284824
+         |                             |         |                   |         |                    /--------|
+         |                              \--------|                   |         |                   |         |          /-combined SC284947
+         |                                       |                    \--------|                   |          \--------|
+         |                                       |                             |          /--------|                    \-combined SC284807
+         |                                       |                             |         |         |
+         |                                       |                             |         |         |          /-combined SC284911
+         |                                       |                             |         |          \--------|
+         |                                       |                              \--------|                   |          /-combined SC284971
+         |                                       |                                       |                    \--------|
+         |                                       |                                       |                              \-combined SC284867
+         |                                       |                                       |
+         |                                       |                                       |          /-combined SC284885
+         |                                       |                                        \--------|
+         |                                       |                                                 |          /-combined SC284925
+         |                                       |                                                  \--------|
+         |                                       |                                                            \-combined SC284871
+         |                                       |
+         |                                       |          /-combined SC284920
+         |                                        \--------|
+         |                                                 |          /-combined SC284943
+         |                                                  \--------|
+         |                                                            \-combined SC284860
+         |
+          \-combined SC284963
+
+
+
+Tree for females (LUAD) based on Cosine distance:
+                    /-combined SC284849
+          /--------|
+         |          \-combined SC284948
+         |
+         |                    /-combined SC284899
+         |          /--------|
+---------|         |          \-combined SC284929
+         |---------|
+         |         |          /-combined SC284842
+         |          \--------|
+         |                    \-combined SC284893
+         |
+          \-combined SC284875
+
+
+
+Tree for males (LUSC) based on Cosine distance:
+                    /-combined SC284855
+          /--------|
+         |         |          /-combined SC284906
+         |          \--------|
+         |                   |          /-combined SC284950
+         |                    \--------|
+         |                              \-combined SC284853
+         |
+         |                    /-combined SC284957
+         |          /--------|
+         |         |         |          /-combined SC284865
+         |         |          \--------|
+         |         |                    \-combined SC284823
+         |         |
+         |         |          /-combined SC284830
+         |         |         |
+         |         |         |                                        /-combined SC284934
+         |         |         |                              /--------|
+         |---------|         |                             |          \-combined SC284877
+         |         |         |                             |
+         |         |         |                             |                    /-combined SC284959
+         |         |         |                             |                   |
+         |         |         |                    /--------|          /--------|                    /-combined SC284938
+         |         |         |                   |         |         |         |          /--------|
+         |         |         |                   |         |         |         |         |          \-combined SC284909
+         |         |         |                   |         |         |          \--------|
+         |         |         |                   |         |         |                   |          /-combined SC284900
+         |         |         |                   |          \--------|                    \--------|
+         |          \--------|                   |                   |                             |          /-combined SC284851
+         |                   |                   |                   |                              \--------|
+---------|                   |                   |                   |                                        \-combined SC284902
+         |                   |                   |                   |
+         |                   |                   |                   |          /-combined SC284810
+         |                   |          /--------|                    \--------|
+         |                   |         |         |                             |          /-combined SC284891
+         |                   |         |         |                              \--------|
+         |                   |         |         |                                       |          /-combined SC284954
+         |                   |         |         |                                        \--------|
+         |                   |         |         |                                                 |          /-combined SC284856
+         |                   |         |         |                                                  \--------|
+         |                   |         |         |                                                            \-combined SC284965
+         |                   |         |         |
+         |                   |         |         |                    /-combined SC284922
+         |                    \--------|         |          /--------|
+         |                             |         |         |          \-combined SC284936
+         |                             |          \--------|
+         |                             |                   |          /-combined SC284904
+         |                             |                    \--------|
+         |                             |                              \-combined SC284873
+         |                             |
+         |                             |                    /-combined SC284828
+         |                             |          /--------|
+         |                             |         |          \-combined SC284916
+         |                              \--------|
+         |                                       |          /-combined SC284812
+         |                                        \--------|
+         |                                                 |          /-combined SC284808
+         |                                                  \--------|
+         |                                                            \-combined SC284835
+         |
+          \-combined SC284846
+
+
+
+Tree for females (LUSC) based on Cosine distance:
+          /-combined SC284931
+         |
+         |          /-combined SC284821
+         |---------|
+         |         |          /-combined SC284826
+         |          \--------|
+         |                   |          /-combined SC284941
+---------|                    \--------|
+         |                             |          /-combined SC284881
+         |                              \--------|
+         |                                       |          /-combined SC284883
+         |                                        \--------|
+         |                                                  \-combined SC284895
+         |
+          \-combined SC284889
+
+
+
