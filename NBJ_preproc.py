@@ -71,11 +71,13 @@ for VCF in VCFDIR:
 mutations_list = [v for k,v in mutations.items()]
 mutations_list = list(set([item[i] for item in mutations_list for i in range(len(item))]))
 
-samples_mutations = pd.DataFrame(np.zeros((len(VCFDIR), len(mutations_list)), dtype = int), columns = mutations_list, \
+samples_mutations = pd.DataFrame(np.zeros((len(PIDS), len(mutations_list)), dtype = int), columns = mutations_list, \
 									index = PIDS)
 
 
-
+for k, v in mutations.items():
+	for mut in v:
+		samples_mutations.loc[k, mut] = 1
 
 store = pd.HDFStore('samples_mutations.h5')
 store['samples_mutations'] = samples_mutations
