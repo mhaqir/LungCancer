@@ -38,12 +38,12 @@ downloaded_samples_unique_case_id = {s: sample_sheet_dict[s] for s in downloaded
 
 samples_table = []
 for k, v  in downloaded_samples_unique_case_id.items():
-	row = clinical.iloc[np.where(clinical['case_submitter_id'].values == v)[0], ] #
-	if (np.shape(row.values)[0] > 0) and (row['race'].values[0] == 'black or african american') and (row['project_id'].values[0] in ['TCGA-LUSC', 'TCGA-LUAD']):
+	row = clinical.iloc[np.where(clinical['case_submitter_id'].values == v)[0], ]
+	if (np.shape(row.values)[0] > 0) and (row['race'].values[0] == 'white') and (row['project_id'].values[0] in ['TCGA-LUSC', 'TCGA-LUAD']):
 		samples_table.append([k, v, row['race'].values[0], row['gender'].values[0], row['project_id'].values[0]])
 
 
-# with open('GDC_samples_BAA.txt', 'w') as f:
+# with open('GDC_samples.txt', 'w') as f:
 # 	f.writelines('	'.join(['file_id', 'case_id', 'race', 'gender', 'project_id']) + '\n')
 # 	for i in range(len(samples_table) - 1):
 # 		f.writelines('	'.join(samples_table[i]) + '\n')
@@ -113,7 +113,14 @@ samples_mutations = pd.DataFrame(np.zeros((len(PIDS), len(mutations_list)), dtyp
 for k, v in mutations.items():
 	for mut in v:
 		samples_mutations.loc[k, mut] = 1
+# print(samples_mutations)
+
+# print(len(mutations_list))
+# print(len(PIDS))
+# print(np.sum(samples_mutations.values, axis = 1))
+
+# print(np.sum(np.sum(samples_mutations.values, axis = 0) == 2))
 
 
-store = pd.HDFStore('GDCbaa_samples_mutations.h5')
-store['GDCbaa_samples_mutations'] = samples_mutations
+store = pd.HDFStore('GDC_samples_mutations.h5')
+store['GDC_samples_mutations'] = samples_mutations

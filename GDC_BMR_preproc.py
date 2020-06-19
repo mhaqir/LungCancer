@@ -120,7 +120,7 @@ downloaded_samples_unique_case_id = {s: sample_sheet_dict[s] for s in downloaded
 samples_table = []
 for k, v  in downloaded_samples_unique_case_id.items():
 	row = clinical.iloc[np.where(clinical['case_submitter_id'].values == v)[0], ]
-	if (np.shape(row.values)[0] > 0) and (row['race'].values[0] == 'white') and (row['project_id'].values[0] in ['TCGA-LUSC', 'TCGA-LUAD']):
+	if (np.shape(row.values)[0] > 0) and (row['race'].values[0] == 'black or african american') and (row['project_id'].values[0] in ['TCGA-LUSC', 'TCGA-LUAD']):
 		samples_table.append([k, v, row['race'].values[0], row['gender'].values[0], row['project_id'].values[0]])
 
 samples_table = np.asarray(samples_table)
@@ -176,5 +176,5 @@ for k, v in mutations.items():
 
 
 
-store = pd.HDFStore('GDC_BMR_samples_mutations.h5')
-store['GDC_BMR_samples_mutations'] = samples_mutations
+store = pd.HDFStore('GDCbaa_BMR_samples_mutations.h5')
+store['GDCbaa_BMR_samples_mutations'] = samples_mutations
